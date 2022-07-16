@@ -4,7 +4,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "fix": "npm run -s format && npm run -s lint:fix",
     "lint": "next lint",
+    "format": "prettier --write --loglevel=warn '**/*.{js,jsx,ts,tsx,html,gql,graphql,json}'",
     "lint:fix": "next lint --fix",
     "typecheck": "tsc",
     "preinstall": "typesync || :"
